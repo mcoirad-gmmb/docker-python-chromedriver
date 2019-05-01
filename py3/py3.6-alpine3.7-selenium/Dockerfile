@@ -10,3 +10,7 @@ RUN apk add chromium chromium-chromedriver
 
 # install selenium
 RUN pip install selenium==3.8.0
+
+# install pandas
+RUN apk add make automake gcc g++ subversion python3-dev
+RUN pip install pandas

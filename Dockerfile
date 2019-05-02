@@ -10,3 +10,10 @@ RUN apk add chromium chromium-chromedriver
 
 # install selenium
 RUN pip install selenium==3.13.0
+
+# install pandas
+RUN apk add make automake gcc g++ subversion python3-dev	RUN apk add make automake gcc g++ subversion python3-dev
+RUN pip install pandas	RUN pip install pandas
+
+ # install civis
+RUN pip install civis

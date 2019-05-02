@@ -14,3 +14,6 @@ RUN pip install selenium==3.8.0
 # install pandas
 RUN apk add make automake gcc g++ subversion python3-dev
 RUN pip install pandas
+
+# install civis
+RUN pip install civis

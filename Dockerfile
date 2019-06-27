@@ -18,3 +18,8 @@ RUN pip install pandas
 
  # install civis
 RUN pip install civis
+
+# install Pillow requirements
+RUN apk add build-base python-dev py-pip jpeg-dev zlib-dev
+ENV LIBRARY_PATH=/lib:/usr/lib
+RUN pip install Pillow

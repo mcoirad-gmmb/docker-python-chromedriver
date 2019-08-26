@@ -23,3 +23,7 @@ RUN pip install civis
 RUN apk add build-base python-dev py-pip jpeg-dev zlib-dev
 ENV LIBRARY_PATH=/lib:/usr/lib
 RUN pip install Pillow
+
+# Add sudo, because we need it to kill the swap memory every so often
+# http://www.yourownlinux.com/2013/10/how-to-free-up-release-unused-cached-memory-in-linux.html
+RUN apk --no-cache add sudo

@@ -6,8 +6,7 @@ Python with Chromedriver, for running automated tests (and other things)
  - Python
  - Google Chrome
  - Chromedriver
- - Selenium (in some versions)
- - Xvfb (in some versions)
+ - Selenium 
  - Pandas
  - Civis
  - Pillow

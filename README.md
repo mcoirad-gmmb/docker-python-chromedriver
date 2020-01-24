@@ -17,7 +17,7 @@ Run the following in your terminal:
 
 ```
 $ cd [your working directory]
-$ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace mcoirad/selenium-pandas sh
+$ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace mcoirad/selenium-pandas:google-lp sh
 ```
 
 This will create a container from the image. Then you could starting running the commands in the container as in your working directory. The followings are some examples to run a selenium test.

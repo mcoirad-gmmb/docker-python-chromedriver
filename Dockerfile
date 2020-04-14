@@ -6,8 +6,8 @@ RUN echo "https://dl-4.alpinelinux.org/alpine/v3.10/main" >> /etc/apk/repositori
 
 # install chromedriver
 RUN apk update
-RUN apk add chromium=80.0.3987.149-r0
-RUN apk add chromium-chromedriver=80.0.3987.149-r0
+RUN apk add chromium #=80.0.3987.149-r0
+RUN apk add chromium-chromedriver #=80.0.3987.149-r0
 
 # install selenium
 RUN pip install selenium==3.141.0

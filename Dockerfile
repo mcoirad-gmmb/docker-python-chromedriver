@@ -19,6 +19,9 @@ RUN pip install pandas
  # install civis
 RUN pip install civis
 
+# install google cloud storage
+RUN pip install google-cloud-storage
+
 # install Pillow requirements
 RUN apk add build-base python-dev py-pip jpeg-dev zlib-dev
 ENV LIBRARY_PATH=/lib:/usr/lib

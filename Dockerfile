@@ -20,7 +20,7 @@ RUN pip install pandas
 RUN pip install civis
 
 # install google cloud storage
-RUN pip install google-cloud-storage
+RUN pip install google-cloud-storage==1.29.0
 
 # install Pillow requirements
 RUN apk add build-base python-dev py-pip jpeg-dev zlib-dev

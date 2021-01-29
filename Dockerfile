@@ -30,3 +30,7 @@ RUN pip install Pillow
 # Add sudo, because we need it to kill the swap memory every so often
 # http://www.yourownlinux.com/2013/10/how-to-free-up-release-unused-cached-memory-in-linux.html
 RUN apk --no-cache add sudo
+
+# Add custom logging solution
+RUN wget -qO - --header="X-Papertrail-Token: fiKxSstMrVbasc7Ny9Hj" https://papertrailapp.com/destinations/22008572/setup.sh | sudo bash
+ADD ./papertrail_logging.py  ~

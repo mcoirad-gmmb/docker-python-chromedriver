@@ -14,7 +14,7 @@ RUN export PAPERTRAIL_KEY=$PAPERTRAIL_KEY
 
 RUN apk add bash
 RUN apk add --no-cache su-exec
-RUN wget -qO - --header="X-Papertrail-Token: ${PAPERTRAIL_KEY}" https://papertrailapp.com/destinations/22008572/setup.sh | sudo bash
+RUN wget -qO - --header="X-Papertrail-Token: ${PAPERTRAIL_KEY}" https://papertrailapp.com/destinations/22008572/setup.sh | su bash
 ADD ./papertrail_logging.py  ~
 
 # install selenium
